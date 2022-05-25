@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/alt_primary">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -9,39 +11,53 @@
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:layout_marginTop="2dp"
-        android:layout_marginBottom="2dp">
+        android:layout_marginBottom="2dp"
+        app:cardBackgroundColor="@color/secondary">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
-            <CheckBox
-                android:id="@+id/checkBox"
+            <TextView
+                android:id="@+id/trailListName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="CheckBox" />
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/nunito_sans_black"
+                android:text="Trasa łazienkowska"
+                android:textColor="@color/primary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Trasa łazienkowska"
-                    android:layout_marginLeft="30dp"/>
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:text="Distance:"
+                    android:textColor="@color/alt_secondary"/>
 
                 <TextView
+                    android:id="@+id/trailListDistance"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/nunito_sans_semibold"
                     android:text="8km"
-                    android:layout_marginLeft="50dp"/>
+                    android:textColor="@color/alt_secondary"/>
 
             </LinearLayout>
-
 
         </LinearLayout>
 
