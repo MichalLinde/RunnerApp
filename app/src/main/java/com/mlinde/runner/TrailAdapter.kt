@@ -6,10 +6,10 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.mlinde.runner.databinding.TrailListElementBinding
 
-class TrailAdapter(val trails: List<Trail>) : RecyclerView.Adapter<TrailAdapter.ViewHolder>() {
+class TrailAdapter(val trails: List<Trail>, private val trailListener: TrailListener) : RecyclerView.Adapter<TrailAdapter.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val inflater = LayoutInflater.from(parent.context)
-        return ViewHolder(TrailListElementBinding.inflate(inflater, parent, false))
+        return ViewHolder(TrailListElementBinding.inflate(inflater, parent, false), trailListener)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
@@ -21,8 +21,15 @@ class TrailAdapter(val trails: List<Trail>) : RecyclerView.Adapter<TrailAdapter.
         return trails.size
     }
 
-    class ViewHolder(private val binding: TrailListElementBinding):
+    class ViewHolder(private val binding: TrailListElementBinding, trailListener: TrailListener):
             RecyclerView.ViewHolder(binding.root){
+
+            init {
+                itemView.setOnClickListener {
+                    trailListener.onItemClicked(trails[adapterPosition])
+                }
+            }
+
             @SuppressLint("SetTextI18n")
             fun bind(trail: Trail) {
                 binding.trailListName.text = trail.name
@@ -41,5 +48,9 @@ class TrailAdapter(val trails: List<Trail>) : RecyclerView.Adapter<TrailAdapter.
                 }
 
             }
-            }
+    }
+
+    interface TrailListener{
+        fun onItemClicked(trail: Trail)
+    }
 }

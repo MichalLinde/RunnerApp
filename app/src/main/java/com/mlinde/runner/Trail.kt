@@ -14,5 +14,23 @@ data class Trail(
 val trails = listOf(
     Trail(1, "Jezioro Maltańskie", 8000, 123.0, 120.0, 100.0, 50.0, "Ładne jezioro" ),
     Trail(2, "Park Cytadela", 3000, 123.0, 120.0, 100.0, 50.0, "Duży park" ),
+    Trail(3, "Park Wilsona", 1500, 123.0, 120.0, 100.0, 50.0, "Park z palmiarnią" ),
+    Trail(1, "Jezioro Maltańskie", 8000, 123.0, 120.0, 100.0, 50.0, "Ładne jezioro" ),
+    Trail(2, "Park Cytadela", 3000, 123.0, 120.0, 100.0, 50.0, "Duży park" ),
+    Trail(3, "Park Wilsona", 1500, 123.0, 120.0, 100.0, 50.0, "Park z palmiarnią" ),
+    Trail(1, "Jezioro Maltańskie", 8000, 123.0, 120.0, 100.0, 50.0, "Ładne jezioro" ),
+    Trail(2, "Park Cytadela", 3000, 123.0, 120.0, 100.0, 50.0, "Duży park" ),
+    Trail(3, "Park Wilsona", 1500, 123.0, 120.0, 100.0, 50.0, "Park z palmiarnią" ),
+    Trail(1, "Jezioro Maltańskie", 8000, 123.0, 120.0, 100.0, 50.0, "Ładne jezioro" ),
+    Trail(2, "Park Cytadela", 3000, 123.0, 120.0, 100.0, 50.0, "Duży park" ),
+    Trail(3, "Park Wilsona", 1500, 123.0, 120.0, 100.0, 50.0, "Park z palmiarnią" ),
+    Trail(1, "Jezioro Maltańskie", 8000, 123.0, 120.0, 100.0, 50.0, "Ładne jezioro" ),
+    Trail(2, "Park Cytadela", 3000, 123.0, 120.0, 100.0, 50.0, "Duży park" ),
+    Trail(3, "Park Wilsona", 1500, 123.0, 120.0, 100.0, 50.0, "Park z palmiarnią" ),
+    Trail(1, "Jezioro Maltańskie", 8000, 123.0, 120.0, 100.0, 50.0, "Ładne jezioro" ),
+    Trail(2, "Park Cytadela", 3000, 123.0, 120.0, 100.0, 50.0, "Duży park" ),
+    Trail(3, "Park Wilsona", 1500, 123.0, 120.0, 100.0, 50.0, "Park z palmiarnią" ),
+    Trail(1, "Jezioro Maltańskie", 8000, 123.0, 120.0, 100.0, 50.0, "Ładne jezioro" ),
+    Trail(2, "Park Cytadela", 3000, 123.0, 120.0, 100.0, 50.0, "Duży park" ),
     Trail(3, "Park Wilsona", 1500, 123.0, 120.0, 100.0, 50.0, "Park z palmiarnią" )
 )

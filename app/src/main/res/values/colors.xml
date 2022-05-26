@@ -12,4 +12,6 @@
     <color name="alt_primary">#3D619B</color>
     <color name="alt_secondary">#E9E9EB</color>
     <color name="alt">#4E586E</color>
+    <color name="text_shadow">#7F000000</color>
+    <color name="text_shadow_white">#FFFFFF</color>
 </resources>
