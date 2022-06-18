@@ -6,10 +6,11 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.mlinde.runner.databinding.TrailListElementBinding
 
-class TrailAdapter(val trails: List<Trail>, private val trailListener: TrailListener) : RecyclerView.Adapter<TrailAdapter.ViewHolder>() {
+class TrailAdapter(val trails: List<Trail>, private val trailListener: TrailListener) :
+    RecyclerView.Adapter<TrailAdapter.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val inflater = LayoutInflater.from(parent.context)
-        return ViewHolder(TrailListElementBinding.inflate(inflater, parent, false), trailListener)
+        return ViewHolder(TrailListElementBinding.inflate(inflater, parent, false), trailListener, trails)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
@@ -21,7 +22,7 @@ class TrailAdapter(val trails: List<Trail>, private val trailListener: TrailList
         return trails.size
     }
 
-    class ViewHolder(private val binding: TrailListElementBinding, trailListener: TrailListener):
+    class ViewHolder(private val binding: TrailListElementBinding, trailListener: TrailListener, trails: List<Trail>):
             RecyclerView.ViewHolder(binding.root){
 
             init {
@@ -33,11 +34,12 @@ class TrailAdapter(val trails: List<Trail>, private val trailListener: TrailList
             @SuppressLint("SetTextI18n")
             fun bind(trail: Trail) {
                 binding.trailListName.text = trail.name
-                val distance = trail.length
-                if (distance < 1000){
+                binding.trailListDifficulty.text = trail.difficulty
+                val distance = trail.distance
+                if (distance!! < 1000){
                     binding.trailListDistance.text = "$distance m"
                 } else{
-                    var kmDistance = trail.length.toDouble()
+                    var kmDistance = trail.distance.toDouble()
                     kmDistance /= 1000
                     if (kmDistance % 1.0 == 0.0){
                         val cutDistance = kmDistance.toInt()

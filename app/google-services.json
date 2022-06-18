@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "754278410511",
+    "firebase_url": "https://runner-app-2093e-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "runner-app-2093e",
+    "storage_bucket": "runner-app-2093e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:754278410511:android:3413e1262c5f1eff39767a",
+        "android_client_info": {
+          "package_name": "com.asd.runner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "754278410511-ojsr4hflv4dphfieu97fc1hsf4eaiu38.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLt_U6RQl2KWURcS3KeMtC6XrIltmNLP0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "754278410511-ojsr4hflv4dphfieu97fc1hsf4eaiu38.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:754278410511:android:ed17ba3cc3c45bc239767a",
+        "android_client_info": {
+          "package_name": "com.mlinde.firebasetest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "754278410511-ojsr4hflv4dphfieu97fc1hsf4eaiu38.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLt_U6RQl2KWURcS3KeMtC6XrIltmNLP0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "754278410511-ojsr4hflv4dphfieu97fc1hsf4eaiu38.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:754278410511:android:8498454a3807213539767a",
+        "android_client_info": {
+          "package_name": "com.mlinde.runner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "754278410511-ojsr4hflv4dphfieu97fc1hsf4eaiu38.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLt_U6RQl2KWURcS3KeMtC6XrIltmNLP0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "754278410511-ojsr4hflv4dphfieu97fc1hsf4eaiu38.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="5dp"
+    android:background="@color/alt_primary"
+    app:cardElevation="8dp"
+    android:focusable="true"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/primary">
+
+        <ImageView
+            android:id="@+id/locationImage"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/runner2" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/locationName"
+            android:textColor="@color/alt_secondary"
+            android:fontFamily="@font/nunito_sans_black"
+            android:textSize="21dp"
+            android:text="Maltańskie Lake"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/primary"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
