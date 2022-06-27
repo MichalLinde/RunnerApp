@@ -69,7 +69,7 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
         this.googleMap!!.moveCamera(CameraUpdateFactory.newLatLngZoom(start,14.5f))
 
         val path: MutableList<List<LatLng>> = ArrayList()
-        val urlDirections = "https://maps.googleapis.com/maps/api/directions/json?origin=$startLat,$startLng&destination=$endLat,$endLng&key=AIzaSyCtZfpbsDsvPswM7FH5fmpp1tTuyaXnD5M"
+        val urlDirections = "https://maps.googleapis.com/maps/api/directions/json?origin=$startLat,$startLng&destination=$endLat,$endLng&key=AIzaSyCtZfpbsDsvBswM7FH5fmpp1tTuyaXnD5M"
         val directionsRequest = object : StringRequest(Method.GET, urlDirections, Response.Listener<String> {
                 response ->
             val jsonResponse = JSONObject(response)
